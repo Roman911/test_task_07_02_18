@@ -1,0 +1,122 @@
+@import'./variables.styl';
+
+.card-2
+  position relative
+  margin 7px
+  background-color $white
+  box-shadow 0 2px 5px 0 $darkGray
+  padding 14px 12px
+  &__logo
+    position absolute
+    top 4%
+    left 27%
+    transform translate(-50%, -50%)
+    border none
+    border-radius 5px
+    width 80px
+    height 80px
+    background url('./../assets/image/logo.png'), $white
+    background-size cover
+    background-position center
+    box-shadow 0 0 5px 0 $darkGray + 20%
+  &__price
+    display none
+  &__star
+    margin 0 15px 15px
+    display flex
+    justify-content flex-end
+    color $darkBlue
+  &__img
+    > img
+      width 100%
+  &__check
+    display flex
+    justify-content center
+    padding 5px
+    > svg
+      border none
+      border-radius 5px
+      padding 2px
+      background-color $darkBlue
+      color $white
+  &__head
+    padding 0 5px
+    > h3
+      font-family Roboto-Light, sans-serif
+      &:nth-of-type(2)
+        display none
+  &__text
+    color $darkGray
+    padding 0 10px
+    line-height 1.5
+    border-bottom 1px solid $darkGray + 30%
+    padding-bottom 25px
+  &__marker
+    display flex
+    justify-content center
+    padding 5px 2px
+    color $darkGray + 20%
+    font-size 1.6rem
+  &__header
+    color $darkGray + 20%
+    font-size 1.2rem
+    line-height 1.5
+    > p
+      &:nth-of-type(2)
+        display none
+  .grid-container
+    padding 20px 5px
+
+@media screen and (max-width: $mobile)
+  .wight
+    width 550px
+    .card-2
+      padding 14px 0
+      background-image url('./../assets/image/bg_card.jpg')
+      background-size 100%, 50%
+      background-position top
+      background-repeat no-repeat
+      &__logo
+        top 15%
+        left 22%
+        width 35px
+        height 35px
+        border-radius 0
+      &__price
+        display block
+        position absolute
+        top 30%
+        right 0
+        padding 5px
+        background-color alpha($darkGray, 0.8)
+        > p
+          color $white
+          font-weight 600
+      &__img
+        display none
+      &__check
+        display none
+      &__star
+        display none
+      &__head
+        margin-top 55px
+        width 115px
+        > h3
+          font-size 0.8rem
+          &:nth-of-type(1)
+            display none
+          &:nth-of-type(2)
+            display block
+      &__marker
+        font-size .8rem
+      &__header
+        > p
+          font-size 0.9rem
+          &:nth-of-type(1)
+            display none
+          &:nth-of-type(2)
+            display block
+      .grid-container
+        padding 10px 5px
+      &__text
+        display none

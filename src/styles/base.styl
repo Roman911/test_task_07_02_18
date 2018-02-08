@@ -1,0 +1,50 @@
+@import'./variables.styl';
+
+$baseFontSize=14px;
+
+$pageContentMaxWidth=992px;
+html
+  font-size $baseFontSize
+  font-family Roboto-Thin, sans-serif
+  min-height 100vh
+
+body
+  padding 0
+  margin 0
+  background-color $lightGray
+  min-height 100vh
+
+h1,h2,h3,h4,p,ul
+  margin 0
+  padding 0
+
+h1
+  font-family Roboto-Light, sans-serif
+  font-size 2.3rem
+  color $white
+
+h2
+  font-family Roboto-Light, sans-serif
+
+h3
+  font-family Roboto-Regular, sans-serif
+
+p
+  font-family Roboto-Light, sans-serif
+  font-weight 500
+
+li
+  list-style none
+
+a
+  text-decoration none
+
+.page-wrapper
+  box-sizing border-box
+  position relative
+  min-height 100vh
+
+.page-content
+  max-width $pageContentMaxWidth
+  margin 0 auto
+  height 100%

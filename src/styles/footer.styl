@@ -1,0 +1,39 @@
+@import'./variables.styl';
+
+.footer
+  position relative
+  padding-bottom 63px
+  .header
+    padding 30px
+    > h2
+      color $black
+  .button
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    border none
+    border-radius 5px
+    padding 15px 20px
+    background-color $white
+    box-shadow 0 2px 5px 0 $darkGray + 20%
+    cursor pointer
+    &:hover
+      background-color $white - 20%
+      transition .5s
+    &_left
+     left -6%
+    &_right
+      right -6%
+    > svg
+      color $darkBlue
+      font-size 2rem
+
+@media screen and (max-width: $mobile)
+  .footer
+    overflow hidden
+    .header
+      padding 30px 20px
+      > h2
+       font-size 1.3rem
+    .button
+      display none

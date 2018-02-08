@@ -1,0 +1,13 @@
+@import'./variables.styl';
+
+.head
+  position relative
+  height 500px
+  background linear-gradient(to bottom, alpha($darkGray, 0) 0%, alpha($darkGray, 1) 100%), url('./../assets/image/bg_head.jpg')
+  background-repeat no-repeat
+  background-size cover
+  background-position bottom
+
+@media screen and (max-width: $mobile)
+  .head
+    height 900px
